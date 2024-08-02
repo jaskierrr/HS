@@ -70,7 +70,6 @@ func Reverse1(in string) string {
 
 	for i := len(str) - 1; i != -1; i-- {
 		newStr += string(str[i])
-		fmt.Println(str[i], i)
 	}
 
 	return string(newStr)
