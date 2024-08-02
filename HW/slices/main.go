@@ -54,7 +54,7 @@ func contains(newSlice []int, v int) bool {
 }
 
 // !!!!!!!!!!!!!!
-// задал длину слайсу и все заработало быстро и без танцев с бубном
+// задал CAPACITY слайсу и все заработало быстро и без танцев с бубном
 func double3(arr []int) []int {
 	newSlice := make([]int, 0, len(arr))
 
