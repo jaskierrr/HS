@@ -18,16 +18,12 @@ func joinChannels(chs ...<-chan int) <-chan int {
 				for itemIn := range item {
 					mergedCh <- itemIn
 				}
-
 				done <- struct{}{}
-				
 			}(item)
 		}
-
 		for range chs {
 			<-done
 		}
-
 		close(mergedCh)
 	}()
 
